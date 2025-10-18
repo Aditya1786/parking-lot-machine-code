@@ -1,11 +1,10 @@
 package com.aditya.repo;
 
 import com.aditya.model.slot.ParkingSlot;
-import org.springframework.stereotype.Repository;
-
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import org.springframework.stereotype.Repository;
 
 @Repository
 public class ParkingSlotRepository {

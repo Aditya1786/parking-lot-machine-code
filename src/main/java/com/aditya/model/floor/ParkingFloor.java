@@ -11,5 +11,6 @@ import lombok.Setter;
 @AllArgsConstructor
 public class ParkingFloor {
   private final String floorId;
-  List<ParkingSlot> parkingSlotList;
+  private final List<ParkingSlot> parkingSlotList;
+  private boolean isFull;
 }

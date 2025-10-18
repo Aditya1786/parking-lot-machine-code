@@ -1,14 +1,18 @@
 package com.aditya.repo;
 
 import com.aditya.model.floor.ParkingFloor;
-import org.springframework.stereotype.Repository;
-
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import org.springframework.stereotype.Repository;
 
 @Repository
 public class ParkingFloorRepository {
   Map<String, ParkingFloor> parkingFloorMap;
+
+  public ParkingFloorRepository() {
+    parkingFloorMap = new LinkedHashMap<>();
+  }
 
   public void save(ParkingFloor parkingFloor) {
     parkingFloorMap.put(parkingFloor.getFloorId(), parkingFloor);

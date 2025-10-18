@@ -18,7 +18,7 @@ public abstract class ParkingSlot {
     this.isAvailable = true;
   }
 
-  abstract public VehicleType getType();
+  public abstract VehicleType getType();
 
-  abstract public double getPricePerHour();
+  public abstract double getPricePerHour();
 }
